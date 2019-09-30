@@ -1,4 +1,4 @@
-const User = require('../models/User')
+const User = require('./User')
 
 exports.getAllUsers = () => User.findAll()
 exports.getOneUser = id => User.findOne(id)

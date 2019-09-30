@@ -9,6 +9,6 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-app.use('/api/v1/users', require('./controllers/userController'))
+app.use('/api/v1/users', require('./user/controller'))
 
 app.listen(8000, () => console.log('listening on port: ' + port))

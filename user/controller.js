@@ -5,7 +5,7 @@ const {
   addOneUser,
   updateOneUser,
   removeOneUser
-} = require('../services/userService')
+} = require('./service')
 
 router.get('/', (req, res) => {
   res.json(getAllUsers())
